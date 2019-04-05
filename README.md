@@ -12,11 +12,29 @@ On the right bar, there will be a list of email categories to choose from, inclu
 The user can click any of those links to see emails belonging to that category.
 User should be able to "compose" an email and have it appear in the sent category of emails.
 User should be able to save an unfinished email as a draft.
+User should be able to search for emails based on certain criteria
+User should be able to sort emails by name, subject, or date in ascending or descending order
+User should be able to delete an email, which gets sent to the trash
+User should be able to permanently delete an email by deleting it from the trash
 
 BONUS?:
 Use gmail api to get actual emails from a user when they log in
 Use email protocols to be able to actually send emails from the client
+Delete emails that have been in the trash for more than 30 days
 
+Components?
+ListEmail Component - Shows all emails
+UI Component - Contains two components
+  Top Bar Component
+  Side Bar Component
+Starred Component
+Email Component - single email
+Sent Component
+Starred Component
+Label Component
+Trash Component
+Drafts Component
+Compose Mail Component
 
 # EmailClient
 
