@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SplashComponent } from './splash/splash.component';
+import { routing } from "./app.routing";
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { SplashComponent } from './splash/splash.component';
     SplashComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
