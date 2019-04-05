@@ -1,3 +1,3 @@
-<p>
-  all-emails works!
-</p>
+<div *ngFor="let currentEmail of emails">
+  <strong>{{currentEmail.from}} - {{currentEmail.subject}} {{currentEmail.body}} {{currentEmail.date}} </strong>
+</div>
