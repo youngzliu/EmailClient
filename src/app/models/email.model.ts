@@ -4,5 +4,5 @@ export class Email{
   public sent: boolean = false;
   public labels: string[] = [];
 
-  constructor(public from: string, public to: string[], public subject: string, public body: string, public date: Date, public id: number){}
+  constructor(public from: string, public fromEmail: string, public to: Map<string, string>, public subject: string, public body: string, public date: Date, public id: number){}
 }
