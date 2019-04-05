@@ -1,3 +1,21 @@
+SPECS:
+User should be able to view their emails in chronological order
+Emails should display sender, subject, a brief preview, and the date in the list view.
+Emails should have different style depending on whether they are "read" or not.
+User should be able to select an individual or multiple emails to apply an action to them.
+Users should be able to mark the email as read or unread, star them, delete them, or add a label to them.
+There should be a interface that resides on the page and doesn't move when you scroll.
+On the top bar of the interface, you can see which page of emails you are on, and have the ability to navigate pages.
+On the top bar, you should be able to select  all emails on the page, refresh the emails, or perform an action after emails are selected.
+On the top bar, there will be a menu for additional settings (display density?, display theme?)
+On the right bar, there will be a list of email categories to choose from, including inbox, starred, sent, trash, drafts, and your labels.
+The user can click any of those links to see emails belonging to that category.
+User should be able to "compose" an email and have it appear in the sent category of emails.
+User should be able to save an unfinished email as a draft.
+
+
+
+
 # EmailClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
