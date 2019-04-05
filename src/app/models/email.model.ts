@@ -3,6 +3,6 @@ export class Email{
   public trash: boolean = false;
   public sent: boolean = false;
   public labels: string[] = [];
-  
-  constructor(public from: string, public to: string[], public subject: string, public body: string, public date: Date){}
+
+  constructor(public from: string, public to: string[], public subject: string, public body: string, public date: Date, public id: number){}
 }
