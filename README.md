@@ -13,7 +13,9 @@ The user can click any of those links to see emails belonging to that category.
 User should be able to "compose" an email and have it appear in the sent category of emails.
 User should be able to save an unfinished email as a draft.
 
-
+BONUS?:
+Use gmail api to get actual emails from a user when they log in
+Use email protocols to be able to actually send emails from the client
 
 
 # EmailClient
