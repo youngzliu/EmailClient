@@ -1,1 +1,9 @@
-<h2>This email has id number: {{emailId}}</h2>
+<h1>{{emailToDisplay.subject}}</h1>
+<br>
+<h5><strong>From: </strong> {{emailToDisplay.from}} ({{emailToDisplay.fromEmail}})</h5>
+<br>
+<h5><strong>To: </strong>{{emailToDisplay.getRecipients()}}</h5>
+<br>
+<h5><strong>Date sent: </strong>{{emailToDisplay.date.toLocaleTimeString('en-US', {month: '2-digit', day: '2-digit', year: 'numeric',  hour: '2-digit', minute: '2-digit', hour12: true})}}</h5>
+<br>
+<p>{{emailToDisplay.body}}</p>

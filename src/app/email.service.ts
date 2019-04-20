@@ -11,4 +11,8 @@ export class EmailService {
     return EMAILS;
   }
 
+  getEmailById(emailId: number){
+    return EMAILS[emailId - 1];
+  }
+
 }
