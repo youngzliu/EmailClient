@@ -2,6 +2,7 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SplashComponent } from './splash/splash.component'
 import { AllEmailsComponent } from './all-emails/all-emails.component';
+import { EmailDetailComponent } from './email-detail/email-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -11,6 +12,10 @@ const appRoutes: Routes = [
   {
     path: "emails",
     component: AllEmailsComponent
+  },
+  {
+    path: "emails/:id",
+    component: EmailDetailComponent
   }
 ];
 
