@@ -9,4 +9,13 @@ export class Email{
     });
     return recipientList;
   }
+
+  getShortenedBody(){
+    if (this.body.length <= 50){
+      return this.body;
+    }
+    else{
+      return this.body.substring(0, 51) + "...";
+    }
+  }
 }
