@@ -1,3 +1,5 @@
+* _Firebase Deployment link: https://emailclient-eec08.firebaseapp.com_
+
 * SPECS:
   * User should be able to view their emails in chronological order
   * Emails should display sender, subject, a brief preview, and the date in the list view.
