@@ -1,0 +1,15 @@
+.navbar{
+  margin-bottom: 20px;
+}
+
+.nav-item, .navbar-brand{
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  margin: 5px;
+  color: white !important;
+}
+
+.navbar-brand{
+  padding: 5px;
+}

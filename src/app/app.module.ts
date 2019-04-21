@@ -9,6 +9,7 @@ import { EmailDetailComponent } from './email-detail/email-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { NavbarComponent } from './navbar/navbar.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +25,8 @@ export const firebaseConfig = {
     AppComponent,
     SplashComponent,
     AllEmailsComponent,
-    EmailDetailComponent
+    EmailDetailComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

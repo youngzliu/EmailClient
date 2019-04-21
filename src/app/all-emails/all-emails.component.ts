@@ -13,11 +13,21 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class AllEmailsComponent implements OnInit {
 
   emails: FirebaseListObservable<any[]>;
+  emailObs;
+  emailModels = [];
 
   constructor(private emailService: EmailService, private router: Router) { }
 
   ngOnInit() {
     this.emails = this.emailService.getEmails();
+    this.emails.subscribe(dataLastEmittedFromObserver => {
+      this.emailObs = dataLastEmittedFromObserver;
+      console.log(this.emailObs);
+      for(let email of this.emailObs){
+        this.emailModels.push(new Email(email.from, email.fromEmail, new Map(email.to), email.subject, email.body, new Date(parseInt(email.date)), email.$key, email.starred, email.trash, email.sent, email.labels));
+      }
+      console.log(this.emailModels);
+    })
   }
 
   goToEmail(email){
