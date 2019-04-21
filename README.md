@@ -1,42 +1,31 @@
 * _Firebase Deployment link: https://emailclient-eec08.firebaseapp.com_
 
 * SPECS:
-  * User should be able to view their emails in chronological order
   * Emails should display sender, subject, a brief preview, and the date in the list view.
+  * Users can click the email to view the detailed information of the email 
+  * On the top bar there is a list of email categories including All mail, starred, and trash
+  * Users can click the links on the top of the bar to automatically filter emails with a pipe based on that criteria
+  * Users can click on the trash button on an email to move an email to the trash
+  * Users can click the empty trash button to empty all emails currently in the trash
+  * Users Emails are stored in a firebase database
+  * Email client is deployed to Firebase webhosting
+
+* TODO:
+  * User should be able to view their emails in chronological order
   * Emails should have different style depending on whether they are "read" or not.
   * User should be able to select an individual or multiple emails to apply an action to them.
-  * Users should be able to mark the email as read or unread, star them, delete them, or add a label to them.
-  * There should be a interface that resides on the page and doesn't move when you scroll.
-  * On the top bar of the interface, you can see which page of emails you are on, and have the ability to navigate pages.
-  * On the top bar, you should be able to select  all emails on the page, refresh the emails, or perform an action after emails are selected.
-  * On the top bar, there will be a menu for additional settings (display density?, display theme?)
-  * On the right bar, there will be a list of email categories to choose from, including inbox, starred, sent, trash, drafts, and your labels.
-  * The user can click any of those links to see emails belonging to that category.
+  * User should be able to add a label or star an email
+  * Users should be able to see a sent, drafts, and labels categories
   * User should be able to "compose" an email and have it appear in the sent category of emails.
   * User should be able to save an unfinished email as a draft.
   * User should be able to search for emails based on certain criteria
   * User should be able to sort emails by name, subject, or date in ascending or descending order
-  * User should be able to delete an email, which gets sent to the trash
-  * User should be able to permanently delete an email by deleting it from the trash
-
-* BONUS?:
+  * On the top bar, there will be a menu for additional settings (display density?, display theme?)
+  * There should be a interface that resides on the page and doesn't move when you scroll.
   * Use gmail api to get actual emails from a user when they log in
   * Use email protocols to be able to actually send emails from the client
   * Delete emails that have been in the trash for more than 30 days
 
-* Components?
-  * ListEmail Component - Shows all emails
-  * UI Component - Contains two components
-    * Top Bar Component
-    * Side Bar Component
-  * Starred Component
-  * Email Component - single email
-  * Sent Component
-  * Starred Component
-  * Label Component
-  * Trash Component
-  * Drafts Component
-  * Compose Mail Component
 
 # EmailClient
 
