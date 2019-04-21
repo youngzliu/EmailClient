@@ -1,0 +1,120 @@
+{ "emails": [
+  {
+    "from": "Bob",
+    "fromEmail": "Bob@gmail.com",
+    "to": [
+      {
+        "name": "Rob",
+        "email": "rob@gmail.com"
+      },
+      {
+        "name": "Eva",
+        "email": "eva@gmail.com"
+      },
+      {
+        "name": "Chelsea",
+        "email": "chelsea@yahoo.com"
+      }  
+    ],
+    "subject": "About next week's party",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "date": 1555804669207,
+    "id": 1,
+    "starred": true,
+    "trash": false,
+    "sent": false,
+    "labels": ["question", "party", "future"]
+  },
+  {
+    "from": "Emily",
+    "fromEmail": "Emily@gmail.com",
+    "to": [
+      {
+        "name": "Dave",
+        "email": "Dave@gmail.com"
+      },
+      {
+        "name": "Steve",
+        "email": "Steve@gmail.com"
+      },
+      {
+        "name": "Eva",
+        "email": "Eva@yahoo.com"
+      }  
+    ],
+    "subject": "Meet up",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "date": 1555804620158,
+    "id": 1,
+    "starred": false,
+    "trash": false,
+    "sent": true,
+    "labels": ["planning", "even", "future"]
+  },
+  {
+    "from": "Samantha",
+    "fromEmail": "Samantha@gmail.com",
+    "to": [
+      {
+        "name": "Rachel",
+        "email": "Rachel@gmail.com"
+      },
+      {
+        "name": "Mike",
+        "email": "Mike@gmail.com"
+      },
+      {
+        "name": "Barbara",
+        "email": "barbara@yahoo.com"
+      }  
+    ],
+    "subject": "Thank you for the presents!",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "date": 1555804606296,
+    "id": 1,
+    "starred": true,
+    "trash": false,
+    "sent": false,
+    "labels": ["party", "past", "birthday"]
+  },
+  {
+    "from": "CHEAP STUFF NOW",
+    "fromEmail": "ADVERTISEMENT@ADVERTISEMENT.com",
+    "to": [
+      {
+        "name": "Rachel",
+        "email": "Rachel@gmail.com"
+      },
+      {
+        "name": "Mike",
+        "email": "Mike@gmail.com"
+      },
+      {
+        "name": "Barbara",
+        "email": "barbara@yahoo.com"
+      },
+      {
+        "name": "Steve",
+        "email": "Steve@gmail.com"
+      },
+      {
+        "name": "Nicole",
+        "email": "Nicole@gmail.com"
+      },
+      {
+        "name": "Bob",
+        "email": "Bob@yahoo.com"
+      }
+    ],
+    "subject": "OUR STUFF HAS NEVER BEEN CHEAPER",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "date": "1555804079273",
+    "id": "1",
+    "starred": false,
+    "trash": true,
+    "sent": false,
+    "labels": ["annoying", "spam", "useless"]
+  }
+  
+  ]
+}
