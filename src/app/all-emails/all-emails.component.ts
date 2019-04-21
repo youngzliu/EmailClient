@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Email } from "../models/email.model";
 import { EmailService } from "../email.service";
 import { Router } from "@angular/router";
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-all-emails',
@@ -11,7 +12,7 @@ import { Router } from "@angular/router";
 })
 export class AllEmailsComponent implements OnInit {
 
-  emails: Email[];
+  emails: FirebaseListObservable<any[]>;
 
   constructor(private emailService: EmailService, private router: Router) { }
 
@@ -19,8 +20,8 @@ export class AllEmailsComponent implements OnInit {
     this.emails = this.emailService.getEmails();
   }
 
-  goToEmail(email: Email){
-    this.router.navigate(["emails", email.id]);
+  goToEmail(email){
+    this.router.navigate(["emails", email.$key]);
   }
 
 }

@@ -1,3 +1,4 @@
-<ul class="list-group" *ngFor="let email of emails">
-  <li class="list-group-item" (click)="goToEmail(email)"><strong>{{email.from}} ({{email.fromEmail}}) - {{email.subject}} - </strong>{{email.getShortenedBody()}} <strong>-</strong> {{email.date.toLocaleTimeString('en-US', {month: '2-digit', day: '2-digit', year: 'numeric',  hour: '2-digit', minute: '2-digit', hour12: true})}}</li>
+<ul class="list-group" *ngFor="let email of emails | async">
+  <!-- <li class="list-group-item" (click)="goToEmail(email)"><strong>{{email.from}} ({{email.fromEmail}}) - {{email.subject}} - </strong>{{email.getShortenedBody()}} <strong>-</strong> {{email.date.toLocaleTimeString('en-US', {month: '2-digit', day: '2-digit', year: 'numeric',  hour: '2-digit', minute: '2-digit', hour12: true})}}</li> -->
+  <li class="list-group-item" (click)="goToEmail(email)"><strong>{{email.from}} ({{email.fromEmail}}) - {{email.subject}} - </strong></li>
 </ul>
