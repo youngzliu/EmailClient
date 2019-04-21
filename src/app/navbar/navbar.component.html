@@ -1,3 +1,12 @@
-<a routerLink="emails">All Emails</a>
-<a routerlink="trash">Trash</a>
-<a routerlink="starred">Starred</a>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/emails">All Emails</a>
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/trash">Trash</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/starred">Starred</a>
+      </li>
+    </ul>
+</nav>

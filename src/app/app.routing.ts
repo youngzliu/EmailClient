@@ -8,23 +8,23 @@ import { StarredComponent } from './starred/starred.component';
 
 const appRoutes: Routes = [
   {
-    path: "",
+    path: '',
     component: SplashComponent
   },
   {
-    path: "emails",
+    path: 'emails',
     component: AllEmailsComponent
   },
   {
-    path: "emails/:id",
+    path: 'emails/:id',
     component: EmailDetailComponent
   },
   {
-    path: "trash",
+    path: 'trash',
     component: TrashComponent
   },
   {
-    path: "starred",
+    path: 'starred',
     component: StarredComponent
   }
 ];
