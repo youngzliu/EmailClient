@@ -35,4 +35,9 @@ export class EmailService {
     email.update({trash: true});
   }
 
+  deleteEmail(id){
+    let email = this.getEmailById(id);
+    email.remove();
+  }
+
 }
