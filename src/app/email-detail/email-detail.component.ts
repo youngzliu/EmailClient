@@ -14,6 +14,8 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class EmailDetailComponent implements OnInit {
   emailId: string;
   emailToDisplay;
+  emailToDisplayObs;
+  emailToDisplayModel;
 
   constructor(private route: ActivatedRoute, private location: Location, private emailService: EmailService) { }
 
@@ -22,6 +24,11 @@ export class EmailDetailComponent implements OnInit {
       this.emailId = urlParameters['id'];
     }); 
     this.emailToDisplay = this.emailService.getEmailById(this.emailId);
+    this.emailToDisplay.subscribe(dataLastEmittedFromObserver => {
+        this.emailToDisplayObs = dataLastEmittedFromObserver;
+        this.emailToDisplayModel = new Email(this.emailToDisplayObs.from, this.emailToDisplayObs.fromEmail, new Map(this.emailToDisplayObs.to), this.emailToDisplayObs.subject, this.emailToDisplayObs.body, new Date(parseInt(this.emailToDisplayObs.date)), this.emailToDisplayObs.$key, this.emailToDisplayObs.starred, this.emailToDisplayObs.trash, this.emailToDisplayObs.sent, this.emailToDisplayObs.labels);
+        console.log(this.emailToDisplayModel);
+      });
   }
 
   trashEmail(){

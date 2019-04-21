@@ -1,17 +1,17 @@
-<!-- <h1>{{emailToDisplay.subject}}</h1>
+<h1>{{emailToDisplayModel.subject}}</h1>
 <br>
-<h5><strong>From: </strong> {{emailToDisplay.from}} ({{emailToDisplay.fromEmail}})</h5>
+<h5><strong>From: </strong> {{emailToDisplayModel.from}} ({{emailToDisplayModel.fromEmail}})</h5>
 <br>
-<h5><strong>To: </strong>{{emailToDisplay.getRecipients()}}</h5>
+<h5><strong>To: </strong>{{emailToDisplayModel.getRecipients()}}</h5>
 <br>
-<h5><strong>Date sent: </strong>{{emailToDisplay.date.toLocaleTimeString('en-US', {month: '2-digit', day: '2-digit', year: 'numeric',  hour: '2-digit', minute: '2-digit', hour12: true})}}</h5>
+<h5><strong>Date sent: </strong>{{emailToDisplayModel.date.toLocaleTimeString('en-US', {month: '2-digit', day: '2-digit', year: 'numeric',  hour: '2-digit', minute: '2-digit', hour12: true})}}</h5>
 <br>
-<p>{{emailToDisplay.body}}</p> -->
+<p>{{emailToDisplayModel.body}}</p>
 
-<h1>{{(emailToDisplay | async)?.subject}}</h1>
+<!-- <h1>{{(emailToDisplay | async)?.subject}}</h1>
 <br>
 <h5><strong>From: </strong> {{(emailToDisplay | async)?.from}} ({{(emailToDisplay | async)?.fromEmail}})</h5>
 <br>
 <br>
 <p>{{(emailToDisplay | async)?.body}}</p>
-<button class="btn btn-danger" (click)="trashEmail()">Move email to trash</button>
+<button class="btn btn-danger" (click)="trashEmail()">Move email to trash</button> -->
