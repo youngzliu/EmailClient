@@ -20,18 +20,19 @@ export class AllEmailsComponent implements OnInit {
 
   ngOnInit() {
     this.emails = this.emailService.getEmails();
-    this.emails.subscribe(dataLastEmittedFromObserver => {
-      this.emailObs = dataLastEmittedFromObserver;
-      console.log(this.emailObs);
-      for(let email of this.emailObs){
-        this.emailModels.push(new Email(email.from, email.fromEmail, new Map(email.to), email.subject, email.body, new Date(parseInt(email.date)), email.$key, email.starred, email.trash, email.sent, email.labels));
-      }
-      console.log(this.emailModels);
-    })
+    this.emailModels = this.emailService.emailModels;
+    // this.emails.subscribe(dataLastEmittedFromObserver => {
+    //   this.emailObs = dataLastEmittedFromObserver;
+    //   console.log(this.emailObs);
+    //   for(let email of this.emailObs){
+    //     this.emailModels.push(new Email(email.from, email.fromEmail, new Map(email.to), email.subject, email.body, new Date(parseInt(email.date)), email.$key, email.starred, email.trash, email.sent, email.labels));
+    //   }
+    //   console.log(this.emailModels);
+    // })
   }
 
   goToEmail(email){
-    this.router.navigate(["emails", email.$key]);
+    this.router.navigate(["emails", email.id]);
   }
 
 }
