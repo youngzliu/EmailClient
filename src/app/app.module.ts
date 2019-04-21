@@ -14,6 +14,7 @@ import { TrashComponent } from './trash/trash.component';
 import { StarredComponent } from './starred/starred.component';
 import { EmailFilterPipe } from "./emailFilter.pipe";
 import { SentComponent } from './sent/sent.component';
+import { AddEmailComponent } from './add-email/add-email.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     TrashComponent,
     StarredComponent,
     EmailFilterPipe,
-    SentComponent
+    SentComponent,
+    AddEmailComponent
   ],
   imports: [
     BrowserModule,

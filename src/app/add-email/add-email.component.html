@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div id="addForm">
+  <h2>Add a new email:</h2>
+  <p>(This is just for testing at the moment. It wouldn't make much sense to add emails in a real email client, but this makes it easier to test functionality by adding emails)</p>
+  <label>From name:</label>
+  <br>
+  <input #from>
+  <br>
+  <label>From email:</label>
+  <br>
+  <input #fromEmail>
+  <br>
+  <label>To (enter name then email, name then email, etc. all separated by spaces):</label>
+  <br>
+  <input #to>
+  <br>
+  <label>Subject:</label>
+  <br>
+  <input #subject>
+  <br>
+  <label>Body:</label>
+  <br>
+  <input #body>
+  <br>
+  <label>Starred? <input type="checkbox" #starred></label>
+  <br>
+  <label>Trash? <input type="checkbox" #trash></label>
+  <br>
+  <label>Sent? <input type="checkbox" #sent></label>
+  <br>
+  <button class="btn btn-success" (click)="submitForm(from.value, fromEmail.value, to.value, subject.value, body.value, starred.checked, trash.checked, sent.checked); from.value=''; fromEmail.value=''; to.value=''; subject.value=''; body.value=''; starred.checked=false; trash.checked=false; sent.checked=false">Add email</button>
+</div>

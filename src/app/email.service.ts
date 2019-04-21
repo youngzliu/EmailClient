@@ -39,5 +39,9 @@ export class EmailService {
     let email = this.getEmailById(id);
     email.remove();
   }
+  
+  addEmail(email){
+    this.emails.push(email);
+  }
 
 }
