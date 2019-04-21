@@ -5,6 +5,7 @@ import { AllEmailsComponent } from './all-emails/all-emails.component';
 import { EmailDetailComponent } from './email-detail/email-detail.component';
 import { TrashComponent } from './trash/trash.component';
 import { StarredComponent } from './starred/starred.component';
+import { SentComponent } from "./sent/sent.component";
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'starred',
     component: StarredComponent
+  },
+  {
+    path: 'sent',
+    component: SentComponent
   }
 ];
 

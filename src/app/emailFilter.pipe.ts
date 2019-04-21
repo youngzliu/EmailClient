@@ -25,6 +25,14 @@ export class EmailFilterPipe implements PipeTransform {
       }
       return output;
     }
+    else if(desiredFilter === "sent"){
+      for(let i = 0; i < input.length; i++){
+        if(input[i].sent === true){
+          output.push(input[i]);
+        }
+      }
+      return output;
+    }
     else{
       return input;
     }

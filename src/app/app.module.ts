@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TrashComponent } from './trash/trash.component';
 import { StarredComponent } from './starred/starred.component';
 import { EmailFilterPipe } from "./emailFilter.pipe";
+import { SentComponent } from './sent/sent.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     NavbarComponent,
     TrashComponent,
     StarredComponent,
-    EmailFilterPipe
+    EmailFilterPipe,
+    SentComponent
   ],
   imports: [
     BrowserModule,
